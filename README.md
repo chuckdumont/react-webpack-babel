@@ -8,7 +8,7 @@
 [![Dependency Status](https://img.shields.io/david/ReactJSResources/react-webpack-babel.svg)](https://david-dm.org/dylang/npm-check)
 
 <em>
-This is a fork of [the project on github](https://github.com/ReactJSResources/react-webpack-babel) that has been modified to demonstrate how one might use Dojo modules from within React code.  It uses the [dojo-webpack-plugin](https://github.com/OpenNTF/dojo-webpack-plugin).  Relevant changes are in webpack.config.js and webpack.production.config.js, and in components/Dojo.jsx
+This is a fork of <a href="https://github.com/ReactJSResources/react-webpack-babel">the project on github</a> that has been modified to demonstrate how one might use Dojo modules from within React code.  It uses the <a href="https://github.com/OpenNTF/dojo-webpack-plugin">dojo-webpack-plugin</a>.  Relevant changes are in webpack.config.js and webpack.production.config.js, and in src/components/Dojo.jsx
 </em>
 
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify? This is for you!
