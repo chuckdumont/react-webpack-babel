@@ -5,6 +5,7 @@ const loadersConf = require('./webpack.loaders');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const DojoWebpackPlugin = require('dojo-webpack-plugin');
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "8888";
@@ -67,6 +68,18 @@ module.exports = {
       files: {
         css: ['style.css'],
         js: [ "bundle.js"],
+      }
+    }),
+    new DojoWebpackPlugin({
+      loaderConfig: {
+        baseUrl: '.',
+    		packages: [
+    			{
+    				name: 'dojo',
+    				location: 'node_modules/dojo',
+    				lib: '.'
+    			}
+        ]
       }
     }),
   ]
